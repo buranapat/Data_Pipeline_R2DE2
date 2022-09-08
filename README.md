@@ -10,5 +10,6 @@
 6. Visualize data via `Google Data Studio`.
 # Result
 <a href="https://datastudio.google.com/s/vtfklLiURx8" target="_blank">Click</a>
+[Click](https://datastudio.google.com/s/vtfklLiURx8){:target="_blank"}
 ---
 <h2><div align="center">Thank you (づ￣ 3￣)づ</div></h2>
