@@ -1,5 +1,6 @@
 from airflow.models import DAG
 from airflow.operators.python import PythonOperator
+from airflow.operators.bash import BashOperator
 from airflow.providers.mysql.hooks.mysql import MySqlHook
 from airflow.utils.dates import days_ago
 import pandas as pd
@@ -104,5 +105,16 @@ with DAG(
             "output_path" : final_output_path,
         },
     )
+    # Load data into data warehouse (BigQuery)
+    t4 = BashOperator(
+        task_id="load_to_bq",
+        bash_command="bq load \
+                     --source_format=CSV \
+                     --autodetect \
+                     DataSet_name.Table_name \
+                     gs://bucket_name/data/file_name.csv"
+    )
+    
+    [t1,t2] >> t3 >> t4 # Set up Dependencies 
 
-    [t1, t2] >> t3 # Set up Dependencies 
+    
