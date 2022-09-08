@@ -8,7 +8,7 @@
 4. Automate data pipeline using `Apache Airflow` (on `Cloud composer`).
 5. Store data in Data Warehouse (`BigQuery`).
 6. Visualize data via `Google Data Studio`.
-#Result
+# Result
 https://datastudio.google.com/s/vtfklLiURx8
 ---
 <h2><div align="center">Thank you (づ￣ 3￣)づ</div></h2>
