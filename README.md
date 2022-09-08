@@ -9,6 +9,6 @@
 5. Store data in Data Warehouse (`BigQuery`).
 6. Visualize data via `Google Data Studio`.
 # Result
-<a href="https://datastudio.google.com/s/vtfklLiURx8" target="_blank" rel="noopener">Click</a>
+Let's see the result on<a href="https://datastudio.google.com/s/vtfklLiURx8" target="_blank">Google Data Studio</a>
 ---
 <h2><div align="center">Thank you (づ￣ 3￣)づ</div></h2>
