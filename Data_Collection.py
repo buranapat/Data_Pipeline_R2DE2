@@ -32,7 +32,7 @@ transaction = audible_transaction.merge(audible_data, how="left",
                                         left_on="book_id", right_on="Book_ID")
 
 # Get data from REST API and convert it to dataframe by pandas
-url = "https://r2de2-workshop-vmftiryt6q-ts.a.run.app/usd_thb_conversion_rate"
+url = ""
 r = requests.get(url) 
 result_conversion_rate = r.json()
 conversion_rate = pd.DataFrame(result_conversion_rate)
